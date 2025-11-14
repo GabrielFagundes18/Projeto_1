@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio & Pedidos - Burger Power</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="cardapio.css" />
+    <link rel="stylesheet" href="../styles/Footer.css" />
+  </head>
+  <body>
+    <div class="voltar">
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </div>
+
+    <main>
+      <div class="page-wrapper">
+        <h1>
+          <i class="fas fa-hamburger"></i> Majestade Burger
+          <i class="fas fa-fire-alt"></i>
+        </h1>
+
+        <div class="content-layout">
+          <div class="menu-wrapper">
+            <section id="hamburguers">
+              <div class="menu-section">
+                <h2><i class="fas fa-burger"></i> Hambúrgueres (20 Opções)</h2>
+
+                <div
+                  class="item-card"
+                  data-name="Classic Power"
+                  data-price="28.50"
+                >
+                  <div class="item-details">
+                    <strong>Classic Majestade</strong
+                    ><span
+                      >Pão, 180g, cheddar, alface, tomate, maionese da
+                      casa.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 28,50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Classic Power', 28.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Double Bacon Smash"
+                  data-price="38.00"
+                >
+                  <div class="item-details">
+                    <strong>Double Bacon Smash</strong
+                    ><span
+                      >2x Smash, bacon crocante, picles, molho especial.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 38,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Double Bacon Smash', 38.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Mushroom Truffle"
+                  data-price="45.90"
+                >
+                  <div class="item-details">
+                    <strong>Mushroom Truffle</strong
+                    ><span
+                      >Blend Angus, queijo brie, cogumelos salteados, azeite
+                      trufado.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 45,90</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Mushroom Truffle', 45.90)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Blue Cheese & Onion"
+                  data-price="39.50"
+                >
+                  <div class="item-details">
+                    <strong>Blue Cheese & Onion</strong
+                    ><span
+                      >Carne, queijo gorgonzola, cebola caramelizada no
+                      shoyu.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 39,50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Blue Cheese & Onion', 39.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Picanha Supreme"
+                  data-price="55.00"
+                >
+                  <div class="item-details">
+                    <strong>Picanha Supreme</strong
+                    ><span
+                      >Picanha 200g, queijo coalho, vinagrete da casa, maionese
+                      de alho.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 55,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Picanha Supreme', 55.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+
+                <div
+                  class="item-card"
+                  data-name="Chicken Crispy"
+                  data-price="32.00"
+                >
+                  <div class="item-details">
+                    <strong>Chicken Crispy</strong
+                    ><span
+                      >Frango empanado, coleslaw, queijo prato, molho
+                      picante.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 32,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Chicken Crispy', 32.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Veggie Black Bean"
+                  data-price="34.00"
+                >
+                  <div class="item-details">
+                    <strong>Veggie Black Bean</strong
+                    ><span
+                      >Pão integral, burger de feijão preto, muçarela de búfala,
+                      rúcula.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 34,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Veggie Black Bean', 34.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Pepperoni Rush"
+                  data-price="36.50"
+                >
+                  <div class="item-details">
+                    <strong>Pepperoni Rush</strong
+                    ><span
+                      >Carne, queijo, pepperoni frito, molho de tomate
+                      picante.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 36,50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Pepperoni Rush', 36.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Cheddar Melt"
+                  data-price="35.00"
+                >
+                  <div class="item-details">
+                    <strong>Cheddar Melt</strong
+                    ><span
+                      >Carne, muito creme de cheddar e cebola
+                      caramelizada.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 35.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Cheddar Melt', 35.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Costela BBQ"
+                  data-price="42.00"
+                >
+                  <div class="item-details">
+                    <strong>Costela BBQ</strong
+                    ><span
+                      >Burger de costela, queijo provolone, molho barbecue
+                      artesanal.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 42.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Costela BBQ', 42.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Mexican Fire"
+                  data-price="39.90"
+                >
+                  <div class="item-details">
+                    <strong>Mexican Fire</strong
+                    ><span>Carne apimentada, guacamole, sour cream.</span>
+                  </div>
+                  <div class="item-price">R$ 39.90</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Mexican Fire', 39.90)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Pastrami Dream"
+                  data-price="48.00"
+                >
+                  <div class="item-details">
+                    <strong>Pastrami Dream</strong
+                    ><span
+                      >Carne, fatias de pastrami, picles e mostarda dijon.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 48.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Pastrami Dream', 48.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Swiss Mountain"
+                  data-price="40.50"
+                >
+                  <div class="item-details">
+                    <strong>Swiss Mountain</strong
+                    ><span
+                      >Queijo Emmental, cebola crispy, maionese defumada.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 40.50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Swiss Mountain', 40.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Goat Cheese Honey"
+                  data-price="44.00"
+                >
+                  <div class="item-details">
+                    <strong>Goat Cheese Honey</strong
+                    ><span>Queijo de cabra, geleia de pimenta e mel.</span>
+                  </div>
+                  <div class="item-price">R$ 44.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Goat Cheese Honey', 44.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div class="item-card" data-name="Lamb Mint" data-price="52.00">
+                  <div class="item-details">
+                    <strong>Lamb Mint</strong
+                    ><span
+                      >Burger de cordeiro, queijo feta, molho de hortelã.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 52.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Lamb Mint', 52.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Smoky Jalapeño"
+                  data-price="37.00"
+                >
+                  <div class="item-details">
+                    <strong>Smoky Jalapeño</strong
+                    ><span
+                      >Bacon, queijo, pimenta jalapeño, molho barbecue
+                      defumado.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 37.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Smoky Jalapeño', 37.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Brie Cranberry"
+                  data-price="46.00"
+                >
+                  <div class="item-details">
+                    <strong>Brie Cranberry</strong
+                    ><span>Queijo Brie, geleia de cranberry.</span>
+                  </div>
+                  <div class="item-price">R$ 46.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Brie Cranberry', 46.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Egg and Bacon"
+                  data-price="33.50"
+                >
+                  <div class="item-details">
+                    <strong>Egg and Bacon</strong
+                    ><span>Clássico com ovo frito e bacon.</span>
+                  </div>
+                  <div class="item-price">R$ 33.50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Egg and Bacon', 33.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Teriyaki Delight"
+                  data-price="41.00"
+                >
+                  <div class="item-details">
+                    <strong>Teriyaki Delight</strong
+                    ><span>Molho Teriyaki, abacaxi grelhado, queijo.</span>
+                  </div>
+                  <div class="item-price">R$ 41.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Teriyaki Delight', 41.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="The Mega Power"
+                  data-price="62.00"
+                >
+                  <div class="item-details">
+                    <strong>The Mega Power</strong
+                    ><span
+                      >3x Carnes, 3x Queijos, Bacon, Picles, Molho
+                      Secreto.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 62.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('The Mega Power', 62.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="batatas">
+              <div class="menu-section">
+                <h2>
+                  <i class="fas fa-french-fries"></i> Batatas Fritas Turbinadas
+                  (10 Opções)
+                </h2>
+
+                <div
+                  class="item-card"
+                  data-name="Palito Clássica (G)"
+                  data-price="14.00"
+                >
+                  <div class="item-details">
+                    <strong>Palito Clássica (Grande)</strong
+                    ><span>Corte fino tradicional com sal.</span>
+                  </div>
+                  <div class="item-price">R$ 14,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Palito Clássica (G)', 14.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Rústica com Alecrim"
+                  data-price="18.00"
+                >
+                  <div class="item-details">
+                    <strong>Rústica com Alecrim</strong
+                    ><span>Corte grosso com casca, azeite e alecrim.</span>
+                  </div>
+                  <div class="item-price">R$ 18,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Rústica com Alecrim', 18.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Canoa Supreme"
+                  data-price="20.00"
+                >
+                  <div class="item-details">
+                    <strong>Canoa Supreme</strong
+                    ><span>Batata no formato canoa, ideal para molhos.</span>
+                  </div>
+                  <div class="item-price">R$ 20,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Canoa Supreme', 20.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Batata Doce Chips"
+                  data-price="19.50"
+                >
+                  <div class="item-details">
+                    <strong>Batata Doce Chips</strong
+                    ><span
+                      >Chips crocantes de batata doce com páprica
+                      defumada.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 19,50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Batata Doce Chips', 19.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Cheddar & Bacon Power"
+                  data-price="25.00"
+                >
+                  <div class="item-details">
+                    <strong>Cheddar & Bacon Power</strong
+                    ><span
+                      >Batata palito coberta com creme de cheddar e bacon.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 25,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Cheddar & Bacon Power', 25.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Parmesan Truffle"
+                  data-price="28.00"
+                >
+                  <div class="item-details">
+                    <strong>Parmesan Truffle</strong
+                    ><span
+                      >Batata rústica com azeite trufado e parmesão
+                      ralado.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 28,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Parmesan Truffle', 28.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Twister Fries"
+                  data-price="17.00"
+                >
+                  <div class="item-details">
+                    <strong>Twister Fries</strong
+                    ><span>Batata em formato espiral temperada.</span>
+                  </div>
+                  <div class="item-price">R$ 17.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Twister Fries', 17.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Fritas c/ Chili"
+                  data-price="26.00"
+                >
+                  <div class="item-details">
+                    <strong>Fritas c/ Chili</strong
+                    ><span
+                      >Palito coberta com chili de carne e sour cream.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 26.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Fritas c/ Chili', 26.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Waffle Fries"
+                  data-price="19.00"
+                >
+                  <div class="item-details">
+                    <strong>Waffle Fries</strong
+                    ><span>Batata em formato de waffle, super crocante.</span>
+                  </div>
+                  <div class="item-price">R$ 19.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Waffle Fries', 19.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Palito Picante"
+                  data-price="16.00"
+                >
+                  <div class="item-details">
+                    <strong>Palito Picante</strong
+                    ><span
+                      >Fritas temperadas com mix de especiarias e pimenta
+                      caiena.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 16.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Palito Picante', 16.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="petiscos">
+              <div class="menu-section">
+                <h2>
+                  <i class="fas fa-hotdog"></i> Petiscos & Acompanhamentos (8
+                  Opções)
+                </h2>
+
+                <div
+                  class="item-card"
+                  data-name="Onion Rings (8 un.)"
+                  data-price="21.90"
+                >
+                  <div class="item-details">
+                    <strong>Onion Rings (8 unidades)</strong
+                    ><span>Anéis de cebola empanados e fritos.</span>
+                  </div>
+                  <div class="item-price">R$ 21,90</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Onion Rings (8 un.)', 21.90)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Chicken Nuggets (6 un.)"
+                  data-price="24.00"
+                >
+                  <div class="item-details">
+                    <strong>Chicken Nuggets (6 unidades)</strong
+                    ><span>Peito de frango empanado artesanal.</span>
+                  </div>
+                  <div class="item-price">R$ 24,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Chicken Nuggets (6 un.)', 24.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Mini-Pastéis Queijo (5 un.)"
+                  data-price="18.00"
+                >
+                  <div class="item-details">
+                    <strong>Mini-Pastéis Queijo (5 unidades)</strong
+                    ><span>Recheio de queijo muçarela.</span>
+                  </div>
+                  <div class="item-price">R$ 18,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Mini-Pastéis Queijo (5 un.)', 18.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Cheese Sticks (4 un.)"
+                  data-price="29.90"
+                >
+                  <div class="item-details">
+                    <strong>Cheese Sticks (4 unidades)</strong
+                    ><span>Palitos de queijo empanados e fritos.</span>
+                  </div>
+                  <div class="item-price">R$ 29,90</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Cheese Sticks (4 un.)', 29.90)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Bolinho de Costela (4 un.)"
+                  data-price="32.00"
+                >
+                  <div class="item-details">
+                    <strong>Bolinho de Costela (4 unidades)</strong
+                    ><span>Recheio de costela desfiada com cream cheese.</span>
+                  </div>
+                  <div class="item-price">R$ 32,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Bolinho de Costela (4 un.)', 32.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Aipim Frito (Porção)"
+                  data-price="17.00"
+                >
+                  <div class="item-details">
+                    <strong>Aipim Frito (Porção)</strong
+                    ><span>Mandioca frita na manteiga de garrafa e sal.</span>
+                  </div>
+                  <div class="item-price">R$ 17.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Aipim Frito (Porção)', 17.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Sticks de Bacon BBQ"
+                  data-price="35.00"
+                >
+                  <div class="item-details">
+                    <strong>Sticks de Bacon BBQ</strong
+                    ><span>Fatias grossas de bacon com molho barbecue.</span>
+                  </div>
+                  <div class="item-price">R$ 35.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Sticks de Bacon BBQ', 35.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Mini Churros Doce (5 un.)"
+                  data-price="22.00"
+                >
+                  <div class="item-details">
+                    <strong>Mini Churros Doce (5 un.)</strong
+                    ><span>Churros com doce de leite ou chocolate.</span>
+                  </div>
+                  <div class="item-price">R$ 22.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Mini Churros Doce (5 un.)', 22.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="refrigerantes">
+              <div class="menu-section">
+                <h2>
+                  <i class="fas fa-soda"></i> Refrigerantes (7 Tipos com 3
+                  Tamanhos)
+                </h2>
+
+                <div
+                  class="item-card"
+                  data-name="Coca-Cola (M)"
+                  data-price="11.00"
+                  data-base-price="8.00"
+                >
+                  <div class="item-details">
+                    <strong>Coca-Cola</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'Coca-Cola', 8.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Coca-Cola', 11.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'Coca-Cola', 15.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 11,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Coca-Cola (M)', 11.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Fanta Laranja (M)"
+                  data-price="10.00"
+                  data-base-price="7.00"
+                >
+                  <div class="item-details">
+                    <strong>Fanta Laranja</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'Fanta Laranja', 7.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Fanta Laranja', 10.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'Fanta Laranja', 13.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 10,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Fanta Laranja (M)', 10.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Sprite (M)"
+                  data-price="10.00"
+                  data-base-price="7.00"
+                >
+                  <div class="item-details">
+                    <strong>Sprite</strong>
+                    <div class="size-selector">
+                      <button onclick="selectSize(this, 'Sprite', 7.00, 'P')">
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Sprite', 10.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button onclick="selectSize(this, 'Sprite', 13.00, 'G')">
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 10,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Sprite (M)', 10.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Guaraná Antarctica (M)"
+                  data-price="11.00"
+                  data-base-price="8.00"
+                >
+                  <div class="item-details">
+                    <strong>Guaraná Antarctica</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'Guaraná Antarctica', 8.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Guaraná Antarctica', 11.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'Guaraná Antarctica', 15.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 11,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Guaraná Antarctica (M)', 11.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Guaraná Zero (M)"
+                  data-price="11.00"
+                  data-base-price="8.00"
+                >
+                  <div class="item-details">
+                    <strong>Guaraná Zero</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'Guaraná Zero', 8.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Guaraná Zero', 11.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'Guaraná Zero', 15.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 11,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Guaraná Zero (M)', 11.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Soda Limonada (M)"
+                  data-price="10.00"
+                  data-base-price="7.00"
+                >
+                  <div class="item-details">
+                    <strong>Soda Limonada</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'Soda Limonada', 7.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'Soda Limonada', 10.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'Soda Limonada', 13.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 10,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Soda Limonada (M)', 10.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="H2OH! Limão (M)"
+                  data-price="9.00"
+                  data-base-price="6.00"
+                >
+                  <div class="item-details">
+                    <strong>H2OH! Limão</strong>
+                    <div class="size-selector">
+                      <button
+                        onclick="selectSize(this, 'H2OH! Limão', 6.00, 'P')"
+                      >
+                        P (250ml)
+                      </button>
+                      <button
+                        class="selected"
+                        onclick="selectSize(this, 'H2OH! Limão', 9.00, 'M')"
+                      >
+                        M (350ml)
+                      </button>
+                      <button
+                        onclick="selectSize(this, 'H2OH! Limão', 12.00, 'G')"
+                      >
+                        G (1L)
+                      </button>
+                    </div>
+                  </div>
+                  <div class="item-price">R$ 9,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('H2OH! Limão (M)', 9.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="cervejas">
+              <div class="menu-section">
+                <h2>
+                  <i class="fas fa-beer"></i> Cervejas Especiais (5 Tipos)
+                </h2>
+
+                <div
+                  class="item-card"
+                  data-name="Pilsen Lager (Long Neck)"
+                  data-price="12.00"
+                >
+                  <div class="item-details">
+                    <strong>Pilsen Lager (Long Neck)</strong
+                    ><span>Cerveja leve, clara e refrescante (Nacional).</span>
+                  </div>
+                  <div class="item-price">R$ 12,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Pilsen Lager (Long Neck)', 12.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="American IPA (Garrafa)"
+                  data-price="25.00"
+                >
+                  <div class="item-details">
+                    <strong>American IPA (Garrafa)</strong
+                    ><span>Amargor equilibrado e notas cítricas.</span>
+                  </div>
+                  <div class="item-price">R$ 25,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('American IPA (Garrafa)', 25.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Weissbier (Trigo)"
+                  data-price="22.00"
+                >
+                  <div class="item-details">
+                    <strong>Weissbier (Trigo)</strong
+                    ><span
+                      >Cerveja alemã de trigo, notas de cravo e banana.</span
+                    >
+                  </div>
+                  <div class="item-price">R$ 22,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Weissbier (Trigo)', 22.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Session IPA (Long Neck)"
+                  data-price="18.00"
+                >
+                  <div class="item-details">
+                    <strong>Session IPA (Long Neck)</strong
+                    ><span>Leve e aromática, baixo teor alcoólico.</span>
+                  </div>
+                  <div class="item-price">R$ 18.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Session IPA (Long Neck)', 18.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Stout (Escura)"
+                  data-price="28.00"
+                >
+                  <div class="item-details">
+                    <strong>Stout (Escura)</strong
+                    ><span>Cerveja escura com notas de café e chocolate.</span>
+                  </div>
+                  <div class="item-price">R$ 28.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Stout (Escura)', 28.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <section id="sucos">
+              <div class="menu-section">
+                <h2>
+                  <i class="fas fa-lemon"></i> Sucos Naturais (8 Tipos - 300ml)
+                </h2>
+
+                <div
+                  class="item-card"
+                  data-name="Suco de Laranja Natural"
+                  data-price="12.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Laranja Natural</strong
+                    ><span>Clássico, fresco e 100% natural.</span>
+                  </div>
+                  <div class="item-price">R$ 12,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Laranja Natural', 12.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco de Limão c/ Hortelã"
+                  data-price="13.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Limão c/ Hortelã</strong
+                    ><span>Refrescante e digestivo.</span>
+                  </div>
+                  <div class="item-price">R$ 13,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Limão c/ Hortelã', 13.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco Vermelho Detox"
+                  data-price="15.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco Vermelho Detox</strong
+                    ><span>Melancia, morango, gengibre e limão.</span>
+                  </div>
+                  <div class="item-price">R$ 15,00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco Vermelho Detox', 15.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco de Abacaxi c/ Coco"
+                  data-price="14.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Abacaxi c/ Coco</strong
+                    ><span>Sabor tropical e cremoso.</span>
+                  </div>
+                  <div class="item-price">R$ 14.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Abacaxi c/ Coco', 14.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco de Maracujá"
+                  data-price="11.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Maracujá</strong
+                    ><span>Natural e calmante.</span>
+                  </div>
+                  <div class="item-price">R$ 11.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Maracujá', 11.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco Verde Power"
+                  data-price="16.00"
+                >
+                  <div class="item-details">
+                    <strong>Suco Verde Power</strong
+                    ><span>Couve, maçã, laranja, gengibre.</span>
+                  </div>
+                  <div class="item-price">R$ 16.00</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco Verde Power', 16.00)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco de Morango"
+                  data-price="14.50"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Morango</strong
+                    ><span>Morango puro (ou com leite, a pedir).</span>
+                  </div>
+                  <div class="item-price">R$ 14.50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Morango', 14.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+                <div
+                  class="item-card"
+                  data-name="Suco de Manga"
+                  data-price="12.50"
+                >
+                  <div class="item-details">
+                    <strong>Suco de Manga</strong
+                    ><span>Sabor suave e adocicado.</span>
+                  </div>
+                  <div class="item-price">R$ 12.50</div>
+                  <button
+                    class="add-btn"
+                    onclick="addItemToCart('Suco de Manga', 12.50)"
+                  >
+                    Adicionar
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <aside id="cart-sidebar">
+            <div class="cart-header">
+              <h3><i class="fas fa-shopping-cart"></i> Seu Pedido</h3>
+            </div>
+
+            <ul id="cart-items-list"></ul>
+
+            <div class="cart-total-area">
+              <span>Total:</span>
+              <span id="cart-total-value">R$ 0,00</span>
+            </div>
+
+            <div class="checkout-form">
+              <h4><i class="fas fa-clipboard-list"></i> Detalhes da Entrega</h4>
+
+              <div
+                id="checkout-alert"
+                style="
+                  color: #d9534f;
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                  display: none;
+                "
+              >
+                Preencha todos os campos obrigatórios!
+              </div>
+
+              <label for="endereco">Endereço Completo (*):</label>
+              <input
+                type="text"
+                id="endereco"
+                placeholder="Rua, Número, Bairro, Refência"
+                required
+              />
+
+              <label for="pagamento">Forma de Pagamento (*):</label>
+              <select id="pagamento" required>
+                <option value="">Selecione a Forma</option>
+                <option value="PIX">PIX</option>
+                <option value="Cartão (Crédito)">Cartão (Crédito)</option>
+                <option value="Cartão (Débito)">Cartão (Débito)</option>
+                <option value="Dinheiro">Dinheiro (Trazer Troco?)</option>
+              </select>
+            </div>
+
+            <button onclick="openWhatsAppChat()" class="checkout-btn">
+              Finalizar Pedido e Enviar <i class="fab fa-whatsapp"></i>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>🍔 Burger Power</h4>
+          <p>Onde o sabor encontra a força!</p>
+          <p><strong>Endereço:</strong> Rua das Grelhas, 123 - Centro</p>
+          <p><strong>Telefone:</strong> (11) 98765-4321</p>
+          <p><strong>E-mail:</strong> contato@burgerpower.com.br</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navegação Rápida</h4>
+          <ul>
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul></div>
+
+        <div class="footer-column">
+          <h4>Ajuda e Feedback</h4>
+          <ul>
+            <li><a href="#contato">Perguntas Frequentes (FAQ)</a></li>
+            <li><a href="#contato">Termos de Serviço</a></li>
+            <li><a href="/politica">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Siga-nos</h4>
+          <div class="social-icons" style="display: flex">
+            <a href="#" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 Burger Power. Todos os direitos reservados. <br /><br />
+        Desenvolvido por Gabriel Fagundes.
+      </div>
+    </footer>
+    <script src="cardapio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+.secao-contato {
+  font-family: "Arial", sans-serif;
+  padding: 40px 20px;
+  color: #f5f5f5;
+    background-color: #fff;
+  border-radius: 12px;
+  max-width: 1200px;
+  margin: 20px auto;
+  width: 95%; /* Adaptação para mobile/centralização */
+}
+
+/* LAYOUT LADO A LADO (RESPONSIVO COM FLEXBOX) */
+.layout-gourmet {
+  display: flex;
+  gap: 40px;
+}
+
+.coluna {
+  padding: 20px 0;
+  flex: 1;
+}
+
+.coluna-formulario {
+  flex: 1.5;
+}
+
+/* ESTILO DO FORMULÁRIO (ORGANIZAÇÃO) */
+.titulo-form {
+  color: #555; /* Cor de destaque quente (coral/laranja) */
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.subtitulo-form {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.grupo-campo {
+  margin-bottom: 20px;
+}
+
+.grupo-campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+select {
+  appearance: none; /* Remove a seta padrão do select */
+  -webkit-appearance: none;
+  /* Ícone de seta customizado para select */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="%23ff7f50"><polygon points="0,0 10,0 5,10"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  padding-right: 30px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #b8860b;
+  outline: none;
+}
+
+/* BOTÃO CTA */
+.btn-enviar {
+  width: 100%;
+  padding: 15px;
+  background-color: #dc3545; /* Vermelho/Laranja de impacto */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-enviar i {
+  margin-right: 10px;
+}
+
+.btn-enviar:hover {
+  background-color: #e03e00 ;
+  transform: translateY(-2px);
+}
+
+.img-fun {
+  width: 50%;
+  border-radius: 12px;
+
+  img{
+    width: 100%;
+    border-radius: 12px;
+  }
+}
+
+/* ESTILOS PARA O FEEDBACK DE SUCESSO/ERRO */
+.mensagem-feedback {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  min-height: 45px;
+  opacity: 0; /* Inicia invisível */
+  transition: opacity 0.5s, background-color 0.5s;
+}
+
+.mensagem-feedback.visible {
+  opacity: 1; /* Torna visível */
+}
+
+.mensagem-feedback.sucesso {
+  background-color: #28a745;
+  color: white;
+}
+
+.mensagem-feedback.erro {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* RESPONSIVIDADE: EMPILHA AS COLUNAS EM TELAS PEQUENAS */
+@media (max-width: 850px) {
+  .layout-gourmet {
+    flex-direction: column;
+  }
+  .coluna-formulario {
+    flex: auto;
+    padding-top: 0;
+  }
+  .coluna-interativa {
+    padding-bottom: 0;
+  }
+  .img-fun {
+  display: none;
+  }
+}

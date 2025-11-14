@@ -1,0 +1,185 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  background-color: #1a1a1a;
+  box-shadow: #333 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-bottom: #333 1px solid;
+  padding: 1rem 4rem;
+}
+
+.container-logo-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ffc107;
+}
+
+.desktop,
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+
+    li {
+      margin: 0 1rem;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1rem;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+.desktop ul a:hover {
+  transform: translateY(-3px);
+  color: #ffc107;
+}
+
+.Navbar-icon {
+  display: none;
+}
+
+@media (max-width: 956px) {
+  header {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .container-logo-navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .mobile {
+    display: none;
+    width: 100%;
+    margin: 1rem 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+
+    li {
+      margin: 0 0.6rem;
+    }
+
+    a {
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 0.7rem;
+      font-size: 1rem;
+      margin-left: 0;
+      border-radius: 25px;
+      text-align: center;
+    }
+  }
+
+  .Navbar-icon {
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ffc107;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 957px)  {
+  header {
+    flex-direction: row;
+    padding: 1.5rem 2rem;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    ul {
+      display: flex;
+   
+    }
+
+    li {
+      margin: 0 0.1rem;
+    }
+
+    a {
+      font-size: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .btn {
+      padding: 1rem;
+      font-size: 0.8rem;
+      margin-left: 0;
+      white-space: nowrap;
+
+      background-color: #d32f2f;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .Navbar-icon {
+      display: none;
+    }
+
+    .logo {
+      font-size: 2rem;
+    }
+  }
+}

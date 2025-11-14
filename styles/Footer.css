@@ -1,0 +1,95 @@
+/* Estilos para o Footer */
+.footer-container {
+    background-color: #1A1A1A; 
+    color: #FFFFFF; 
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    border-right: #333 2px solid; 
+    margin-left: 20px;
+}
+
+.footer-column h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #FFC107;
+    padding-bottom: 5px;
+}
+
+.footer-column p {
+    line-height: 1.6;
+    color: #FFFFFF;
+}
+
+.footer-column p strong {
+    color: #FFC107;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFC107;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #FFFFFF;
+}
+
+/* Responsividade básica */
+@media (max-width: 788px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column {
+        min-width: 100%;
+        border-right: none;
+    }
+    .social-icons {
+        justify-content: center !important;
+    }
+}
